@@ -3,12 +3,22 @@
   become: yes
   gather_facts: yes
   tasks:
-  - name: i want to install webserver
+  - name: i want to install webserver on ubantu ansible nodes
     apt:
      name: apache2
      state: present
 
-  - name: i want to start webserver
+  - name: i want to start webserver on ubantu ansible nodes
     service:
      name: apache2
      state: started
+
+  - name: i want to install webserver on redhat ansible nodes
+    yum:
+     name: httpd
+     state: present
+
+  - name: i want to start webserver on redhat ansible nodes
+    service:
+     name: httpd
+     state: started   
