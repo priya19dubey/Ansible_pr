@@ -17,3 +17,7 @@
 [myRedHatServers]
 172.31.34.180
 172.31.45.154
+
+[myWebServers:vars] 
+mywebpackonubantu= apache22222
+mywebpackonredhat= httpd
