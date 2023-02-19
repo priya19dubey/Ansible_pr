@@ -18,6 +18,3 @@
 172.31.34.180
 172.31.45.154
 
-[myWebServers:vars] 
-mywebpackonubantu= apache2
-mywebpackonredhat= httpd
