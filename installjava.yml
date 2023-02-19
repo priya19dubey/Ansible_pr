@@ -11,5 +11,5 @@
   - name: install open jdk8 on RedHat
     yum:
      name: "{{myjavapackonredhat}}"
-     stae: present
+     state: present
     when: ansible_os_family == "RedHat"  
