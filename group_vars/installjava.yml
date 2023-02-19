@@ -1,0 +1,15 @@
+---
+- hosts: myWebServers
+  become: yes
+  tasks: 
+  - name: install open jdk8 on ubantu
+    apt:
+     name: "{{myjavapackonubantu}}"
+     state: present
+    when: ansible_os_family == "Debian"
+
+  - name: install open jdk8 on RedHat
+    yum:
+     name: "{{myjavapackonredhat}}"
+     stae: present
+    when: ansible_os_family == "RedHat"  
