@@ -1,0 +1,8 @@
+---
+- hosts: 172.31.34.180
+  become: yes
+  tasks: 
+  - name: create a file
+    file: 
+      path: /home/ubantu/myfile
+      state: touch
