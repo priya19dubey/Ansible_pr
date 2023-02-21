@@ -16,3 +16,8 @@
     copy:
       src: mytextfile
       dest: /var/www/html/index.html
+
+  - name: copy dynamic files
+    template:
+       src: mydynamicfile.j2
+       dest: /var/www/html/index.html
