@@ -6,3 +6,13 @@
     file: 
       path: /home/ubuntu/myfile
       state: touch
+
+  - name: install apache2
+    apt:
+      name: apache2
+      state: present
+
+  - name: copy a file
+    copy:
+      src: mytextfile
+      dest: /var/www/html/index.html
