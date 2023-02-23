@@ -1,0 +1,7 @@
+---
+- name: i want to add user
+  user:
+    name: tomcat
+    home: /opt/tomcat
+    shell: /bin/false
+    state: present
